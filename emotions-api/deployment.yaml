@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: emotions-api
-        image: r1nzler/emotions-api:bd0e3047
+        image: r1nzler/emotions-api:ddcbe2b7
         ports:
         - containerPort: 80
