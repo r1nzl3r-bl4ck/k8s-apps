@@ -7,5 +7,7 @@ bases:
 commonLabels:
   env: prod
 
+nameSuffix: -prod
+
 patchesStrategicMerge:
   - deployment.yaml

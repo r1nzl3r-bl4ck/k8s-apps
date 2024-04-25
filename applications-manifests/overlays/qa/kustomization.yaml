@@ -7,3 +7,4 @@ bases:
 commonLabels:
   env: qa
 
+nameSuffix: -qa
