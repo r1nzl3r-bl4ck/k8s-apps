@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: emotions-api-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/r1nzl3r-bl4ck/k8s-apps.git
+    targetRevision: main
+    path: applications-manifests/overlays/prod/emotions-api
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated: {}
